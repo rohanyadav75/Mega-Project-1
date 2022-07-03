@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How To Convert From Feet To Centimeter Using Javascript</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: rgb(25, 196, 190);
+    }
+</style>
+<body>
+<body>
+<div class="container">
+    <br/><br/>
+    <div class="text-center">
+        <h1  style="color: rgb(221, 99, 28); text-shadow: 5px 4px 2px black;">Convert From Feet To Centimeter Using Javascript</h1>
+    </div>
+
+    <div class="well" style="background-color:darkgrey;  ">
+        <p >
+            <label>Feet</label>
+            <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p style="background-color:rgb(178, 247, 17) ;">Centimeter: <span id="outputCM"></span></p>
+
+        <script>
+            function LengthConverter(valNum) {
+                document.getElementById("outputCM").innerHTML=valNum/0.032808;
+            }
+        </script>
+
+    </div>
+</div>
+</body>
+</html>
